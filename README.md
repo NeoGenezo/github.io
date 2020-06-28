@@ -18,6 +18,6 @@ features are:
  - reliable checking for internet connection
 
  To customize it for your own use, you must edit most of the source
- files and add your owns backgrounds and blur them, for better or worse
+ files and add your own backgrounds and blur them, for better or worse
  this requires essential web developing skills. Refer to each file's
- commends for help.
+ commends for instructions.
