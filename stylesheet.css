@@ -1,0 +1,148 @@
+@font-face{
+   font-family: font;
+   src: url(font);
+}
+body{
+    font-family: font;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+#flexbox{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 1em;
+}
+a{
+    text-decoration: none;
+    color: #acf;
+    transition: color .5s;
+}
+a:hover{
+    color: #fff;
+}
+h1, h3, ul, #missions h2, #calendar h2{
+    margin-bottom: 0;
+}
+h1, h2, ul{
+    margin-top: 0;
+}
+ul{
+    padding-left: 1em;
+}
+.row{
+    padding: 0 .5em 0 .5em;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+.section{
+    /*
+    visibility: hidden;
+    */
+    position: relative;
+    width: 30em;
+    max-width: 100%;
+    margin: 1em 0 0 0;
+    padding: 1em;
+    border-radius: 5px;
+    background-color: #000000a0;
+    box-sizing: border-box;
+
+    box-shadow: 0 0 .5em #000000a0;
+    transition: background-color .5s, opacity .5s;
+}
+.section:hover{
+    background-color: #000000e0;
+    box-shadow: 0 0 .5em #000000e0;
+}
+#page-bg{
+    position: fixed;
+    z-index:-2;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.section-bg{
+    position: absolute;
+    z-index:-1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+input{
+    font-family: font;
+    border-style: solid;
+    background-color: #00000070;
+    border-radius: 5px;
+    border-width: 0;
+}
+input:focus{
+    color: #fff;
+}
+input::placeholder{
+    text-align: center;
+    opacity: .3;
+    color: #fff;
+}
+.link-group{
+    text-align: right;
+}
+#welcome-message{
+    width: max-content;
+    margin: auto;
+}
+#calendar-header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.date{
+    margin-right: 1em;
+}
+.event{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#sidenote{
+    text-align: right;
+}
+#search-header{
+    margin-bottom: 0;
+}
+.mission-header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+}
+#con-status{
+    display: none;
+    position: fixed;
+    bottom: 0;
+    background-color: #a00000;
+    text-align: center;
+    right: 0;
+    padding: .5em;
+    border-radius: 5px 0 0 0;
+    box-shadow: 0 0 .5em #000000;
+}
+#con-status:hover{
+    opacity: 0;
+    transition: opacity .2s;
+}

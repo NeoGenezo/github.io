@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0"
+    >
+    <title>
+        the Internet
+    </title>
+    <link
+        rel="stylesheet"
+        href="stylesheet.css"
+    >
+    <link rel="shortcut icon"href="favicon">
+<!--
+    I have JQuery always downloaded on my device for many reasons but I
+    use a link here just for the purpose of demonstration.
+-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head><body>
+    <div id="flexbox">
+        <div id="page-bg">
+<!--
+    For adding a background you first need to add the image at the
+    ./backgrounds directory, then blur it and add it to the ./blurbgs
+    directory and then add its description at the ./setbackground.js
+    file. Refer to that file for more details.
+-->
+        </div>
+        <div class="row">
+            <div class="section" id="welcome">
+                <div class="section-bg">
+                </div>
+                <div id="welcome-message">
+                    welcome to 
+                    <h1>
+                        the Internet
+                    </h1>
+                </div>
+            </div>
+            <div class="section" class="search">
+                <div class="section-bg">
+                </div>
+                <form method="get" action="https://duckduckgo.com/">
+                    <h2 id="search-header">
+                        Search
+                    </h2>
+                    <input type="text" class="form-control" name="q" placeholder="DuckDuckGo">
+                </form>
+            </div>
+            <div class="section" id="bookmarks">
+                <div class="section-bg">
+                </div>
+                <h2>
+                    Bookmarks
+                </h2>
+<!--
+    This is the place where you can add and remove bookmarks. You can
+    follow the existing bookmarks as example.
+-->
+                <h3>development</h3>
+                <div class="link-group">
+                    <a href="https://gitlab.com/">
+                        GitLab<small><small> GitLab.com</small></small>
+                    </a>
+                </div>
+                <h3>social</h3>
+                <div class="link-group">
+                    <a href="https://www.messenger.com/">
+                        Messenger<small><small> Facebook</small></small>
+                    </a>
+                    |
+                    <a href="https://twitter.com/">
+                        Twitter<small><small> Twitter</small></small>
+                    </a>
+                </div>
+                <h3>entertainment</h3>
+                <div class="link-group">
+                    <a href="https://www.youtube.com/">
+                        YouTube<small><small> Google</small></small>
+                    </a>
+                    |
+                    <a href="https://www.imdb.com/">
+                        IMDb<small><small> amazon</small></small>
+                    </a>
+                </div>
+                <h3>e-mail</h3>
+                <div class="link-group">
+                    <a href="https://mail.google.com/">
+                        Gmail<small><small> Google</small></small>
+                    </a>
+                    |
+                    <a href="https://outlook.live.com/mail/inbox">
+                        Outlook<small><small> Microsoft</small></small>
+                    </a>
+                </div>
+                <h3>education</h3>
+                <div class="link-group">
+                    <a href="https://en.wiktionary.org">
+                        Wiktionary<small><small> WIKIMEDIA</small></small>
+                    </a>
+                </div>
+                <h3>miscellaneous</h3>
+                <div class="link-group">
+                    <a href="https://translate.google.com/">
+                        Translate<small><small> Google</small></small>
+                    </a>
+                    |
+                    <a href="https://drive.google.com/">
+                        Drive<small><small> Google</small></small>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="section">
+                <div class="section-bg">
+                </div>
+                <h2>
+                    Missions
+                </h2>
+<!--
+    This is the place where you can add and remove your to-do tasks. Use
+    the prototype for simplicity.
+-->
+<!-- Prototype
+                <div>
+                    <h3>name of item</h3>
+                    <small>level of priority</small>
+                </div>
+                <p>description</p>
+                <small>available time</small>
+-->
+                <div class="mission-header">
+                    <h3>thesis</h3>
+                    <small>high priority</small>
+                </div>
+                <div>Build a deep reinforcement learning agent.</div>
+                <small>as fast as possible</small>
+                <div class="mission-header">
+                    <h3>another mission</h3>
+                    <small>low priority</small>
+                </div>
+                <div>Do some stuff.</div>
+                <small>due 12/7</small>
+            </div>
+            <div class="section" id="calendar">
+<!--
+    For adding a calendar event refer to the ./today.js file.
+-->
+                <div class="section-bg">
+                </div>
+                <div id="calendar-header">
+                    <h2>
+                        Calendar
+                    </h2>
+                    <h2 id="date"></h2>
+                </div>
+                <div id="today">
+                    <h3>today</h3>
+                    <ul id="today-list"></ul>
+                </div>
+                <div id="next-days">
+                    <h3>upcoming events</h3>
+                    <ul id="next-days-list"></ul>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-bg">
+                </div>
+                <h2>
+                    Notes
+                </h2>
+                <ul>
+<!--
+    This is the place where you can add and remove your notes. Notes are
+    simply a list.
+-->
+                    <li>Cook rice with a 2:1 water rice ratio.</li>
+                </ul>
+            </div>
+            <div class="section" id="background-info">
+                <div class="section-bg">
+                </div>
+                <h2>
+                    Background
+                </h2>
+            </div>
+        </div>
+        <div class="row">
+        <!-- Easter egg section; feel free to use it as a political
+        disclaimer.
+        <div class="section">
+                <div class="section-bg">
+                </div>
+            <h2>
+                Disclaimer
+            </h2>
+            <p>
+                This is the portal of this electronic device to the wonders
+                of the Internet.  In there you will find powerful
+                information, thought provoking material and interesting
+                tales. Although entering needs caution; for the sinister
+                data industry that will push you in the bottomless pit of
+                internet addiction, will shade your way out using cheap
+                entertainment and the false need of social media acceptance.
+                Then it will shamelessly spy upon you and sell your
+                identity. Bear in mind, what is gratis is not necessarily
+                free but it comes in a great price that finance cannot buy. 
+            </p>
+            <p>
+                Enjoy your journey fellow user!
+            </p>
+        </div>
+        -->
+        </div>
+    </div>
+    <div id="con-status">
+    you are offline
+    </div>
+    <script src="checkconnection.js"></script>
+    <script src='setbackground.js'></script>
+    <script src='today.js'></script>
+</body></html>
