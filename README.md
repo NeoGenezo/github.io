@@ -17,7 +17,15 @@ features are:
  - agenda of annual events
  - reliable checking for internet connection
 
- To customize it for your own use, you must edit most of the source
- files and add your own backgrounds and blur them, for better or worse
- this requires essential web developing skills. Refer to each file's
- commends for instructions.
+GitLab Pages demo: https://damavrom.gitlab.io/startpage-sanitized/
+
+> **NOTE:** The demo may load slower due to network speeds, the loading
+time is almost nonexistent with disk times.
+
+> **NOTE:** The blur effect may not work properly on some browsers. It
+surely does on Firefox.
+
+To customize it for your own use, you must edit most of the source
+files and add your own backgrounds and blur them, for better or worse
+this requires essential web developing skills. Refer to each file's
+commends for instructions.
