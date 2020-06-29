@@ -17,7 +17,7 @@ features are:
  - agenda of annual events
  - reliable checking for internet connection
 
-GitLab Pages demo: https://damavrom.gitlab.io/startpage-sanitized/
+GitLab Pages demo: https://damavrom.gitlab.io/startpage-sanitized/startpage.html
 
 > **NOTE:** The demo may load slower due to network speeds, the loading
 time is almost nonexistent with disk times.
